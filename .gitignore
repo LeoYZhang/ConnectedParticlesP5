@@ -5,6 +5,9 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
+# Dist
+dist/
+
 # Operating System generated files
 .DS_Store
 .DS_Store?
