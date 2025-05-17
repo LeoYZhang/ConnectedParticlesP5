@@ -3,16 +3,16 @@
     "version": "1.0.1",
     "description": "Connected particles simulation made in p5.js",
     "type": "module",
-    "main": "dist/browser-particle-sim.umd.js",
-    "module": "dist/browser-particle-sim.esm.js",
+    "main": "dist/connected-particles-p5.umd.js",
+    "module": "dist/connected-particles-p5.esm.js",
     "files": [
         "dist",
         "src"
     ],
     "exports": {
         ".": {
-            "import": "./dist/browser-particle-sim.esm.js",
-            "require": "./dist/browser-particle-sim.umd.js",
+            "import": "./dist/connected-particles-p5.esm.js",
+            "require": "./dist/connected-particles-p5.umd.js",
             "types": "./dist/index.d.ts"
         }
     },
