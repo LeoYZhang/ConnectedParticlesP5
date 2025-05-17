@@ -9,6 +9,13 @@
         "dist",
         "src"
     ],
+    "exports": {
+        ".": {
+            "import": "./dist/browser-particle-sim.esm.js",
+            "require": "./dist/browser-particle-sim.umd.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
     "scripts": {
         "build": "rollup -c",
         "dev": "rollup -c -w",
@@ -29,7 +36,8 @@
         "@rollup/plugin-node-resolve": "^15.2.3",
         "@rollup/plugin-terser": "^0.4.4",
         "p5": "^1.9.0",
-        "rollup": "^4.40.2"
+        "rollup": "^4.40.2",
+        "rollup-plugin-copy": "^3.5.0"
     },
     "peerDependencies": {
         "p5": "^1.0.0"

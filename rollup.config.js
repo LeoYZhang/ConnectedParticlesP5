@@ -1,5 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
+import copy from 'rollup-plugin-copy';
 
 const outputFileNameBase = 'connected-particles-p5';
 const umdGlobalName = 'ConnectedParticlesP5';
@@ -12,7 +13,14 @@ const commonOutputOptions = {
 export default {
     input: inputFilePath,
     external: ['p5'],
-    plugins: [resolve()],
+    plugins: [
+        resolve(),
+        copy({
+            targets: [
+                { src: 'src/index.d.ts', dest: 'dist' }
+            ]
+        }),
+    ],
     output: [
         {
             file: `dist/${outputFileNameBase}.esm.js`,
