@@ -1,6 +1,6 @@
 {
     "name": "connected-particles-p5",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Connected particles simulation made in p5.js",
     "type": "module",
     "main": "dist/browser-particle-sim.umd.js",
